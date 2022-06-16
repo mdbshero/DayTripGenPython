@@ -34,4 +34,13 @@ def random_choice(list):
     choice = list[random_num(list)]
     return choice
 
-print(random_choice(destinations))
+# Select initial random trip
+def initial_trip():
+    random_dest = random_choice(destinations)
+    random_rest = random_choice(restaurants)
+    random_trans = random_choice(transportation)
+    random_ent = random_choice(entertainment)
+    itrip = [random_dest, random_rest, random_trans, random_ent]
+    return itrip
+
+print(initial_trip())
