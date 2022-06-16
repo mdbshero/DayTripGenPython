@@ -43,4 +43,13 @@ def initial_trip():
     itrip = [random_dest, random_rest, random_trans, random_ent]
     return itrip
 
-print(initial_trip())
+first_trip = initial_trip() #initial trip selection
+
+print(first_trip)
+
+# initial trip sentence display
+def trip_display(trip):
+    display_text = "You will travel to " + trip[0] + ". You will eat at " + trip[1] + ". You will travel by " + trip[2] + ". Your day's entertainment will be going to a " + trip[3] +"."
+    return display_text
+
+print(trip_display(first_trip))
