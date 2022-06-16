@@ -29,4 +29,9 @@ def random_num(list):
     num = random.randrange(0, len(list))
     return num
 
-print(random_num(destinations))
+# Use random number to select from lists
+def random_choice(list):
+    choice = list[random_num(list)]
+    return choice
+
+print(random_choice(destinations))
